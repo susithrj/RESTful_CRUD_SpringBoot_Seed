@@ -1,3 +1,4 @@
+/*
 package com.susithrj.dao;
 
 import com.susithrj.model.User;
@@ -7,3 +8,4 @@ public interface UserRepository extends JpaRepository<User,Integer> {
 
 
 }
+*/

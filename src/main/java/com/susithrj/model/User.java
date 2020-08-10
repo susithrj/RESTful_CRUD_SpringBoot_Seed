@@ -1,3 +1,4 @@
+/*
 package com.susithrj.model;
 
 import javax.persistence.*;
@@ -45,3 +46,4 @@ public class User {
         this.age = age;
     }
 }
+*/

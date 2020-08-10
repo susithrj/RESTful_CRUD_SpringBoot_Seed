@@ -1,3 +1,4 @@
+/*
 package com.susithrj.services;
 
 import com.susithrj.dao.UserRepository;
@@ -25,3 +26,4 @@ public class UserServices {
         return "data saved";
     }
 }
+*/

@@ -1,7 +1,7 @@
 package com.susithrj.controllers;
 
-import com.susithrj.model.User;
-import com.susithrj.services.UserServices;
+//import com.susithrj.model.User;
+//import com.susithrj.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +11,7 @@ import java.util.List;
 
 public class UserController {
     @Autowired
-    private UserServices userServices;
+   // private UserServices userServices;
 
     @GetMapping("/")
     public String mainDisplay() {
@@ -19,10 +19,10 @@ public class UserController {
 
     }
 
-    @PostMapping("/add")
+  /*  @PostMapping("/add")
     public String addUser(@RequestBody User Userdata){
-       return  userServices.saveUser(Userdata);
-    }
+        return  userServices.saveUser(Userdata);
+    }*/
 
 
 }
