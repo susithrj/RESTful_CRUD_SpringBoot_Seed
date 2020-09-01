@@ -1,7 +1,7 @@
 package com.susithrj.controllers;
 
-//import com.susithrj.model.User;
-//import com.susithrj.services.UserServices;
+import com.susithrj.model.User;
+import com.susithrj.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
