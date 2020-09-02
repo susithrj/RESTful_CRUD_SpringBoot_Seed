@@ -15,11 +15,14 @@ public class User {
     @Column(name = "age")
     private int age;
 
-    public User(int id, String name, int age) {
+   /* public User() {
+    }
+
+    public User(int id,int age, String name) {
         this.id = id;
         this.name = name;
         this.age = age;
-    }
+    }*/
 
     public int getId() {
         return id;

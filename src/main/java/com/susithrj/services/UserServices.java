@@ -24,4 +24,29 @@ public class UserServices {
         userRepository.save(userData);
         return "data saved";
     }
+    public String updateUser(User newUserData) {
+      String msg = null;
+       if(newUserData.getName() != null){
+        userRepository.save(newUserData);
+        msg = "sucessfully updated User";
+       }else{
+           msg = "Error";
+       }
+       return msg;
+    }
+    public String deleteUser(User newUserData) {
+        String msg = null;
+        if(newUserData.getName() != null){
+        userRepository.delete(newUserData);
+        msg= "data deleted";
+        }else{
+         msg = "Error";
+        }
+        return msg;
+    }
+
+    public User findById(Integer id) {
+       return userRepository.getOne(id);
+
+    }
 }

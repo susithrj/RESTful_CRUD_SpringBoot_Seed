@@ -11,18 +11,36 @@ import java.util.List;
 
 public class UserController {
     @Autowired
-   // private UserServices userServices;
+    private UserServices userServices;
 
     @GetMapping("/")
     public String mainDisplay() {
         return "allUsers";
-
     }
-
-  /*  @PostMapping("/add")
+    @GetMapping("/all")
+    public List<User> allUsers() {
+        return userServices.getAllUsers();
+    }
+    @PostMapping("/add")
     public String addUser(@RequestBody User Userdata){
         return  userServices.saveUser(Userdata);
-    }*/
+    }
+
+    @PostMapping("/update")
+    public String updateUser(@RequestBody User newUserdata){
+        return  userServices.updateUser(newUserdata);
+    }
+
+    @PostMapping("/delete")
+    public String deleteUser(@RequestBody User newUserdata){
+        return  userServices.deleteUser(newUserdata);
+    }
+    @GetMapping("/find/(id)")
+    public User getUSerById(@PathVariable Integer id) {
+        System.out.println("UserID: "+id);
+        return userServices.findById(id);
+
+    }
 
 
 }
