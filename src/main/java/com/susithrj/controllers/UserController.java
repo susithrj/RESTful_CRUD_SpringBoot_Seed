@@ -35,12 +35,20 @@ public class UserController {
     public String deleteUser(@RequestBody User newUserdata){
         return  userServices.deleteUser(newUserdata);
     }
-    @GetMapping("/find/(id)")
-    public User getUSerById(@PathVariable Integer id) {
-        System.out.println("UserID: "+id);
-        return userServices.findById(id);
+    @GetMapping("/find/{id}")
+    public String getUSerById(@PathVariable Integer id) {
+        System.out.println("UserID: "+ id);
+       User user1 = userServices.findById(id);
+       return user1.getName();
 
     }
+    /*@GetMapping("/find/{id}")
+    public User getUserById(@PathVariable("id") Integer id) {
+
+        System.out.println("UserID: "+id);
+
+       return userServices.findById(id);
+    }*/
 
 
 }
