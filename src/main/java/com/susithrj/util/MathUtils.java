@@ -1,4 +1,4 @@
-package com.susithrj.uril;
+package com.susithrj.util;
 
 public class MathUtils {
     public int sum(int a, int b) {
