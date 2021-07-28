@@ -2,6 +2,7 @@ package com.susithrj.controllers;
 
 import com.susithrj.model.User;
 import com.susithrj.services.UserServices;
+import com.susithrj.util.FileReaderUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,8 +15,8 @@ public class UserController {
     private UserServices userServices;
 
     @GetMapping("/")
-    public String mainDisplay() {
-        return "allUsers";
+    public List<String> mainDisplay() {
+        return  FileReaderUtils.returnFromFile();
     }
     @GetMapping("/all")
     public List<User> allUsers() {
