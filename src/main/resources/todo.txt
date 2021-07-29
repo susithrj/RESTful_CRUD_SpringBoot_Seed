@@ -1,6 +1,8 @@
 // Todo list for repository
-// TODO: complete data fetching paths
+
 // Done : junit
+// done :readfromfile aand return on restendpoint
+//// TODO: fetch from db and return through rest
 //  sonarlint
 // Todo: docker
 // Todo: Aws (hosting)
