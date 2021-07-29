@@ -8,19 +8,19 @@ import java.util.List;
 
 public class FileReaderUtils {
 
-    public static void main(String[] args) {
-       //creates a new file instance
-
-       // String finalreturn = returnFromFile();
-//        System.out.println(".............");
-//        System.out.println(returnFromFile());
-//        System.out.println(".............");
-//        System.out.println(returnFromFileProcessed(returnFromFile()));
-            DBConn.getInstance();
-            DBConn.makeJDBCConn();
-        //creates a new file instance
-
-    }
+//    public static void main(String[] args) {
+//       //creates a new file instance
+//
+//       // String finalreturn = returnFromFile();
+////        System.out.println(".............");
+////        System.out.println(returnFromFile());
+////        System.out.println(".............");
+////        System.out.println(returnFromFileProcessed(returnFromFile()));
+//    //        DBConn.getInstance();
+//    //        DBConn.makeJDBCConn();
+//        //creates a new file instance
+//
+//    }
 
     public static List<String> returnFromFile(){
         ArrayList<String> result = new ArrayList<>();
