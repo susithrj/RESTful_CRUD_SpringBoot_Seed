@@ -1,8 +1,6 @@
 package com.susithrj.util;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 import static java.lang.System.err;
 
@@ -28,7 +26,7 @@ public class DBConn {
         }
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/smartguru_db?serverTimezone=UTC", "root", "");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/crudapi?serverTimezone=UTC", "root", "");
           //  jdbc:mysql://localhost:3306/crudapi?serverTimezone=UTC
         } catch (SQLException e) {
             e.printStackTrace();
@@ -40,13 +38,35 @@ public class DBConn {
         }
 
         //todo queriying database in another class
-
+   fetchFirstBitofData(conn);
 
         try {
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("connection successfully closed");
+        }
+
+    }
+
+
+    public static void fetchFirstBitofData(Connection conn) {
+
+        try {
+            String sql = "SELECT * FROM `tbl_employee` WHERE 1";
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while(rs.next()){
+                //Display values
+                System.out.print("ID: " + rs.getInt("id"));
+                System.out.print(", Name: " + rs.getString("name"));
+
+            }
+
+            System.out.println("\n rs ---> printed successfully");
+        } catch (SQLException e) {
+            e.printStackTrace();
+
         }
 
     }
