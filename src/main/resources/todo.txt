@@ -2,7 +2,9 @@
 
 // Done : junit
 // done :readfromfile aand return on restendpoint
-//// TODO: fetch from db and return through rest
+//// TODO: fetch from db and
+// TODO: DB design improvements
+//ToDO: return through rest
 //  sonarlint
 // Todo: docker
 // Todo: Aws (hosting)
