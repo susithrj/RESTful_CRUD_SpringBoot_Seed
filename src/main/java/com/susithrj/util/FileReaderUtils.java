@@ -12,11 +12,12 @@ public class FileReaderUtils {
        //creates a new file instance
 
        // String finalreturn = returnFromFile();
-        System.out.println(".............");
-        System.out.println(returnFromFile());
-        System.out.println(".............");
-        System.out.println(returnFromFileProcessed(returnFromFile()));
-
+//        System.out.println(".............");
+//        System.out.println(returnFromFile());
+//        System.out.println(".............");
+//        System.out.println(returnFromFileProcessed(returnFromFile()));
+            DBConn.getInstance();
+            DBConn.makeJDBCConn();
         //creates a new file instance
 
     }
