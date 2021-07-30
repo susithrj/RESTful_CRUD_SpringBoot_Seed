@@ -1,6 +1,5 @@
-package com.susithrj.util;
+package com.susithrj.hbr.util;
 
-import com.susithrj.util.MathUtils;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

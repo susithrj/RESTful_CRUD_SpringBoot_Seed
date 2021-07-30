@@ -1,4 +1,4 @@
-package com.susithrj.util;
+package com.susithrj.hbr.util;
 
 public class DBUtil {
     public static void main(String[] args) {

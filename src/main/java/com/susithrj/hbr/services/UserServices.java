@@ -1,7 +1,7 @@
-package com.susithrj.services;
+package com.susithrj.hbr.services;
 
-import com.susithrj.dao.UserRepository;
-import com.susithrj.model.User;
+import com.susithrj.hbr.dao.UserRepository;
+import com.susithrj.hbr.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

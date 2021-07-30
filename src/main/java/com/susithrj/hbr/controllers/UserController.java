@@ -1,8 +1,8 @@
-package com.susithrj.controllers;
+package com.susithrj.hbr.controllers;
 
-import com.susithrj.model.User;
-import com.susithrj.services.UserServices;
-import com.susithrj.util.FileReaderUtils;
+import com.susithrj.hbr.model.User;
+import com.susithrj.hbr.services.UserServices;
+import com.susithrj.hbr.util.FileReaderUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

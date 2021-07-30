@@ -1,4 +1,4 @@
-package com.susithrj.model;
+package com.susithrj.hbr.model;
 
 import javax.persistence.*;
 

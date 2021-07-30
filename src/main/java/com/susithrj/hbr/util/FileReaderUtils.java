@@ -1,4 +1,4 @@
-package com.susithrj.util;
+package com.susithrj.hbr.util;
 
 import java.io.BufferedReader;
 import java.io.File;

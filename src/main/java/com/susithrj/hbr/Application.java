@@ -1,4 +1,4 @@
-package com.susithrj;
+package com.susithrj.hbr;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
