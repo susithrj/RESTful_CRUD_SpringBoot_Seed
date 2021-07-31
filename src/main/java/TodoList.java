@@ -1,5 +1,3 @@
-package com.susithrj.hbr.util;
-
 public class TodoList {
 
     // Done : junit
