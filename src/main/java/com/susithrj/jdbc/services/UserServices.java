@@ -1,54 +1,33 @@
-package com.susithrj.jdbc.services;
-
-import com.susithrj.jdbc.model.User;
-import com.susithrj.jdbc.dao.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
-
-
-@Service
-public class UserServices {
-
-    @Autowired
-    private UserRepository userRepository;
-
-    public List<User> getAllUsers() {
-        User u1 = new User();
-     //   u1.setName("susith");
-        List<User> allUsers = userRepository.findAll();
-        return allUsers;
-    }
-
-
-    public String saveUser(User userData) {
-        userRepository.save(userData);
-        return "data saved";
-    }
-    public String updateUser(User newUserData) {
-      String msg = null;
-       if(newUserData.getName() != null){
-        userRepository.save(newUserData);
-        msg = "sucessfully updated User";
-       }else{
-           msg = "Error";
-       }
-       return msg;
-    }
-    public String deleteUser(User newUserData) {
-        String msg = null;
-        if(newUserData.getName() != null){
-        userRepository.delete(newUserData);
-        msg= "data deleted";
-        }else{
-         msg = "Error";
-        }
-        return msg;
-    }
-
-    public User findById(Integer id) {
-       return userRepository.getOne(id);
-
-    }
-}
+//package com.susithrj.jdbc.services;
+//
+//import com.susithrj.jdbc.model.User;
+//import com.susithrj.jdbc.dao.UserDAO;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.stereotype.Service;
+//
+//import java.sql.SQLException;
+//import java.util.List;
+//
+//
+//@Service
+//public class UserServices {
+//
+//    public List<User> getUser()
+//            throws SQLException
+//    {
+//        String query = "select * from employee";
+//        PreparedStatement ps
+//                = con.prepareStatement(query);
+//        ResultSet rs = ps.executeQuery();
+//        List<Employee> ls = new ArrayList();
+//
+//        while (rs.next()) {
+//            Employee emp = new Employee();
+//            emp.setEmp_id(rs.getInt("emp_id"));
+//            emp.setEmp_name(rs.getString("emp_name"));
+//            emp.setEmp_address(rs.getString("emp_address"));
+//            ls.add(emp);
+//        }
+//        return ls;
+//    }
+//}
