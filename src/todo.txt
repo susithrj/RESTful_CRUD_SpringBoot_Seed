@@ -4,8 +4,9 @@
 // done :readfromfile aand return on restendpoint
 // done : fetch from db and
 // done : DB design improvements
-// TODO : transport fetched data to rest
-// TODO : return through rest
+// Done: transport fetched data to rest
+// Done : return through rest
+// todo: rest ->model ->dAO DESIGN CHANGES
 //  sonarlint
 // Todo: docker
 // Todo: Aws (hosting)
