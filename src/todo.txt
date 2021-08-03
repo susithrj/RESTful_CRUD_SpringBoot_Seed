@@ -6,7 +6,8 @@
 // done : DB design improvements
 // Done: transport fetched data to rest
 // Done : return through rest
-// todo: rest ->model ->dAO DESIGN CHANGES
+// DONE : rest ->model ->dAO DESIGN CHANGES
+// TODO : scale with more entities + design decisions
 //  sonarlint
 // Todo: docker
 // Todo: Aws (hosting)
