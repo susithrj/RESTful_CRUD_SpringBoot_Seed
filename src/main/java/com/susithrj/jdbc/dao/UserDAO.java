@@ -7,6 +7,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface UserDAO  {
-    public List<User> getUsers() throws SQLException;
+    public  List<User> getUsers() throws SQLException;
 //check
 }

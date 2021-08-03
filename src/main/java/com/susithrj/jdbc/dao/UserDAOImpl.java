@@ -15,10 +15,11 @@ public class UserDAOImpl implements UserDAO {
 
 
 
-    @Override
-    public List<com.susithrj.jdbc.model.User> getUsers()
+
+    public static List<com.susithrj.jdbc.model.User> getUsers1()
             throws SQLException
     {
+        System.out.println("inside getusers method");
         Connection con = DBConnR.getInstance();
         String query = "select * from tbl_employee";
         PreparedStatement ps
@@ -31,8 +32,9 @@ public class UserDAOImpl implements UserDAO {
             usr.setId(rs.getInt("id"));
             //usr.setName(rs.getString("name"));
             //usr.setId(rs.getInt("id"));
-          //  usr.setId('1');
-            usr.setName(rs.getString("name"));
+            usr.setId('1');
+            usr.setName("susithhd");
+           // usr.setName(rs.getString("name"));
 
             ls.add(usr);
 
@@ -42,4 +44,8 @@ public class UserDAOImpl implements UserDAO {
     }
 
 
+    @Override
+    public List<User> getUsers() throws SQLException {
+        return null;
+    }
 }
