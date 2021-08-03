@@ -22,7 +22,7 @@ public class UserController {
  //   @Autowired
 //    private UserServices userServices;
     private UserDAOImpl userDAOimpl;
- //UserDAOImpl userDAOimpl = new UserDAOImpl();
+
     @GetMapping("/")
     public List<String> mainDisplay() {
         return  FileReaderUtils.returnFromFile();
@@ -30,35 +30,11 @@ public class UserController {
 
     @GetMapping("/all")
     public List<User> allUsers() throws SQLException {
-        //List<User> ls = UserDAOImpl.();
-//        Connection con = DBConnR.getInstance();
-//        if(con == null){
-//            System.out.println("con is null");
-//        }
-//        String query = "select * from tbl_employee";
-//        PreparedStatement ps
-//                = con.prepareStatement(query);
-//        ResultSet rs = ps.executeQuery();
-//        List<User> ls = new ArrayList();
-//
-//        while (rs.next()) {
-//            User usr = new User();
-//            usr.setId(rs.getInt("id"));
-//            //usr.setName(rs.getString("name"));
-//            //usr.setId(rs.getInt("id"));
-//            //  usr.setId('1');
-//            usr.setName(rs.getString("name"));
-//
-//            ls.add(usr);
-//
-//        }
-//        System.out.println("ls size"+ls.size());
-//        return ls;
-
-
-
-        return userDAOimpl.getUsers1();
+        UserDAOImpl userDAO = new UserDAOImpl();
+        return userDAO.getUsers();
+        // TODO : check design decision correct?
     }
+
     @GetMapping("/all1")
     public String allUsersT() {
         //List<User> ls = UserDAOImpl.();
