@@ -7,7 +7,10 @@
 // Done: transport fetched data to rest
 // Done : return through rest
 // DONE : rest ->model ->dAO DESIGN CHANGES
-// TODO : scale with more entities + design decisions
+// DONE : scale with more entities + design decisions part 1
+// DONE : clarify intilizations of instance method
+// TODO : more clarify intilizations of where to use when to use
+//TODO : scale with more entities + design decisions part 2
 //  sonarlint
 // Todo: docker
 // Todo: Aws (hosting)
