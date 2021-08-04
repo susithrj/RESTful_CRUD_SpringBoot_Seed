@@ -1,7 +1,9 @@
 package com.susithrj.jdbc.controllers;
 
+import com.susithrj.jdbc.dao.ProjectsDAOImpl;
 import com.susithrj.jdbc.dao.UserDAO;
 import com.susithrj.jdbc.dao.UserDAOImpl;
+import com.susithrj.jdbc.model.Project;
 import com.susithrj.jdbc.model.User;
 //import com.susithrj.jdbc.services.UserServices;
 import com.susithrj.jdbc.util.DBConnR;
@@ -33,6 +35,11 @@ public class UserController {
         UserDAOImpl userDAO = new UserDAOImpl();
         return userDAO.getUsers();
         // TODO : check design decision correct?
+    }
+
+    public  List<Project> getAllProjects(){
+        ProjectsDAOImpl projectsDAOimpl = new ProjectsDAOImpl();
+        return  projectsDAOimpl.getProjects();
     }
 
     @GetMapping("/all1")
