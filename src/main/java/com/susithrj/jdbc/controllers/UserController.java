@@ -24,10 +24,15 @@ public class UserController {
  //   @Autowired
 //    private UserServices userServices;
     private UserDAOImpl userDAOimpl;
-
-    @GetMapping("/")
+    @CrossOrigin
+    @GetMapping("/a")
     public List<String> mainDisplay() {
         return  FileReaderUtils.returnFromFile();
+    }
+    @CrossOrigin
+    @GetMapping("/")
+    public String mainDisplay1() {
+        return  "test";
     }
 
     @GetMapping("/all")
