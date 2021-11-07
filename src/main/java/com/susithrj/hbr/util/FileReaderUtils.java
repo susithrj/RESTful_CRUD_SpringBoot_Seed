@@ -25,7 +25,7 @@ public class FileReaderUtils {
     public static List<String> returnFromFile(){
         ArrayList<String> result = new ArrayList<>();
         try {
-            File file=new File("E:\\2021_hot projects\\RESTful_CRUD_SpringBoot_Seed\\src\\main\\resources\\todo.txt");
+            File file=new File("G:\\smartguru\\DF_backEnd\\RESTful_CRUD_SpringBoot_Seed\\src\\main\\resources\\todo.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = reader.readLine();
 

@@ -3,6 +3,8 @@ public class TodoList {
     // Done : junit
     //  sonarlint
 
+    //Todo : caching
+
     // Todo: docker
     // Todo: Aws (hosting)
 
