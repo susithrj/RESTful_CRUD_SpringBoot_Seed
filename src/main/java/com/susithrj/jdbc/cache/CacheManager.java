@@ -1,5 +1,6 @@
 package com.susithrj.jdbc.cache;
 
+import java.util.Timer;
 import java.util.TimerTask;
 
 public class CacheManager {
@@ -8,7 +9,7 @@ public class CacheManager {
     upadateStore(); //(push ongoing critical data changes to store)
     clearstore();*/
 
-   
+
    TimerTask task = new TimerTask() {
        @Override
        public void run() {
@@ -16,5 +17,7 @@ public class CacheManager {
       // clearstore()
        }
    };
+    Timer timer = new Timer(true);//daemon thread
+     //   timer.scheduleAtFixedRate();
 
 }
