@@ -18,3 +18,5 @@
 // Todo: authentication (login / logout / user sessions) (spring security) //done in isolated repo
 // Todo: github actions
 // TODO : db migration//
+//TODO ; Gson serialization //
+
