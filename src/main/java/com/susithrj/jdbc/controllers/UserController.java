@@ -1,5 +1,6 @@
 package com.susithrj.jdbc.controllers;
 
+import com.google.gson.Gson;
 import com.susithrj.jdbc.dao.ProjectsDAOImpl;
 import com.susithrj.jdbc.dao.UserDAO;
 import com.susithrj.jdbc.dao.UserDAOImpl;
@@ -8,6 +9,8 @@ import com.susithrj.jdbc.model.User;
 //import com.susithrj.jdbc.services.UserServices;
 import com.susithrj.jdbc.util.DBConnR;
 import com.susithrj.jdbc.util.FileReaderUtils;
+import com.susithrj.jdbc.util.GsonUtil;
+import com.susithrj.jdbc.util.GsonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,9 +33,12 @@ public class UserController {
         return  FileReaderUtils.returnFromFile();
     }
     @CrossOrigin
-    @GetMapping("/")
+    @GetMapping("/ad")
     public String mainDisplay1() {
-        return  "test";
+
+        com.susithrj.jdbc.models.User usr = new  com.susithrj.jdbc.models.User(1,26,"Rasanja");
+
+        return  GsonUtil.jsonstring(usr);
     }
 
     @GetMapping("/all")
