@@ -2,5 +2,3 @@
 Seed project
 Restful CRUD API built with  Springboot + Hibernate + Spring Jpa + MySql
 
-TODO :
-Serialize object to json pass through rest controller 
